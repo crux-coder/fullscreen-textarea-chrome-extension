@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "Textarea Fullscreen",
+  "version": "1.0",
+  "description": "Make any textarea fullscreen while typing",
+  "permissions": ["activeTab"],
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "css": ["fullscreen.css"],
+    "js": ["content.js"]
+  }]
+}
